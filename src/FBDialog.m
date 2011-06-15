@@ -287,52 +287,69 @@ params   = _params;
 // NSObject
 
 - (id)init {
-    if ((self = [super initWithFrame:CGRectZero])) {
-        _delegate = nil;
-        _loadingURL = nil;
-        _showingKeyboard = NO;
-        
-        self.backgroundColor = [UIColor clearColor];
-        self.autoresizesSubviews = YES;
-        self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        self.contentMode = UIViewContentModeRedraw;
-        
-        _webView = [[UIWebView alloc] initWithFrame:CGRectMake(kPadding, kPadding, 480, 480)];
-        _webView.delegate = self;
-        _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        [self addSubview:_webView];
-        
-        UIImage* closeImage = [UIImage imageNamed:@"FBDialog.bundle/images/close.png"];
-        
-        UIColor* color = [UIColor colorWithRed:167.0/255 green:184.0/255 blue:216.0/255 alpha:1];
-        _closeButton = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
-        [_closeButton setImage:closeImage forState:UIControlStateNormal];
-        [_closeButton setTitleColor:color forState:UIControlStateNormal];
-        [_closeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
-        [_closeButton addTarget:self action:@selector(cancel)
-               forControlEvents:UIControlEventTouchUpInside];
-        
-        // To be compatible with OS 2.x
-#if __IPHONE_OS_VERSION_MAX_ALLOWED <= __IPHONE_2_2
-        _closeButton.font = [UIFont boldSystemFontOfSize:12];
-#else
-        _closeButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
-#endif
-        
-        _closeButton.showsTouchWhenHighlighted = YES;
-        _closeButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin
-        | UIViewAutoresizingFlexibleBottomMargin;
-        [self addSubview:_closeButton];
-        
-        _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:
-                    UIActivityIndicatorViewStyleWhiteLarge];
-        _spinner.autoresizingMask =
-        UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin
-        | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        [self addSubview:_spinner];
-        _modalBackgroundView = [[UIView alloc] init];
-    }
-    return self;
+    self = [super initWithFrame:CGRectZero];
+  if (self) {
+    _delegate = nil;
+    _loadingURL = nil;
+    _orientation = UIDeviceOrientationUnknown;
+    _showingKeyboard = NO;
+
+    self.backgroundColor = [UIColor clearColor];
+    self.autoresizesSubviews = YES;
+    self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.contentMode = UIViewContentModeRedraw;
+      
+      NSBundle *myBundle = [NSBundle mainBundle];
+      UIImage* iconImage = [UIImage imageWithContentsOfFile:[myBundle pathForResource:@"fbicon" ofType:@"png"]];
+      UIImage* closeImage = [UIImage imageWithContentsOfFile:[myBundle pathForResource:@"close" ofType:@"png"]];
+
+    _iconView = [[UIImageView alloc] initWithImage:iconImage];
+    [self addSubview:_iconView];
+
+    UIColor* color = [UIColor colorWithRed:167.0/255 green:184.0/255 blue:216.0/255 alpha:1];
+    _closeButton = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
+    [_closeButton setImage:closeImage forState:UIControlStateNormal];
+    [_closeButton setTitleColor:color forState:UIControlStateNormal];
+    [_closeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
+    [_closeButton addTarget:self action:@selector(cancel)
+      forControlEvents:UIControlEventTouchUpInside];
+
+    // To be compatible with OS 2.x
+    #if __IPHONE_OS_VERSION_MAX_ALLOWED <= __IPHONE_2_2
+      _closeButton.font = [UIFont boldSystemFontOfSize:12];
+    #else
+      _closeButton.titleLabel.font = [UIFont boldSystemFontOfSize:12];
+    #endif
+
+    _closeButton.showsTouchWhenHighlighted = YES;
+    _closeButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin
+      | UIViewAutoresizingFlexibleBottomMargin;
+    [self addSubview:_closeButton];
+
+    CGFloat titleLabelFontSize = (FBIsDeviceIPad() ? 18 : 14);
+    _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    _titleLabel.text = kDefaultTitle;
+    _titleLabel.backgroundColor = [UIColor clearColor];
+    _titleLabel.textColor = [UIColor whiteColor];
+    _titleLabel.font = [UIFont boldSystemFontOfSize:titleLabelFontSize];
+    _titleLabel.autoresizingMask = UIViewAutoresizingFlexibleRightMargin
+      | UIViewAutoresizingFlexibleBottomMargin;
+    [self addSubview:_titleLabel];
+
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(kPadding, kPadding, 480, 480)];
+    _webView.delegate = self;
+    _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self addSubview:_webView];
+
+    _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:
+      UIActivityIndicatorViewStyleWhiteLarge];
+    _spinner.autoresizingMask =
+      UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin
+      | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    [self addSubview:_spinner];
+    _modalBackgroundView = [[UIView alloc] init];
+  }
+  return self;
 }
 
 - (void)dealloc {

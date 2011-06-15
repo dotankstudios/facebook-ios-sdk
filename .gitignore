@@ -22,3 +22,4 @@ test/UnitTest/build/
 *~
 *#
 .arcconfig
+.DS_Store
