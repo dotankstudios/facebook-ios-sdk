@@ -27,8 +27,8 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "NSString+SBJSON.h"
-#import "SBJsonParser.h"
+#import <Facebook/NSString+SBJSON.h>
+#import <Facebook/SBJsonParser.h>
 
 @implementation NSString (NSString_SBJSON)
 

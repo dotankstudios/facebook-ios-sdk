@@ -15,7 +15,7 @@
  */
 
 
-#import "FBDialog.h"
+#import <Facebook/FBDialog.h>
 
 @protocol FBLoginDialogDelegate;
 

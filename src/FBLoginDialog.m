@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#import "FBDialog.h"
-#import "FBLoginDialog.h"
+#import <Facebook/FBDialog.h>
+#import <Facebook/FBLoginDialog.h>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 

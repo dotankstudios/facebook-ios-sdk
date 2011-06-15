@@ -27,8 +27,8 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "NSObject+SBJSON.h"
-#import "SBJsonWriter.h"
+#import <Facebook/NSObject+SBJSON.h>
+#import <Facebook/SBJsonWriter.h>
 
 @implementation NSObject (NSObject_SBJSON)
 

@@ -28,8 +28,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "SBJsonParser.h"
-#import "SBJsonWriter.h"
+#import <Facebook/SBJsonParser.h>
+#import <Facebook/SBJsonWriter.h>
 
 /**
  @brief Facade for SBJsonWriter/SBJsonParser.

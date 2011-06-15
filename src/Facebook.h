@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#import "FBLoginDialog.h"
-#import "FBRequest.h"
+#import <Facebook/FBLoginDialog.h>
+#import <Facebook/FBRequest.h>
 
 @protocol FBSessionDelegate;
 

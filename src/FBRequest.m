@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#import "FBRequest.h"
-#import "JSON.h"
+#import <Facebook/FBRequest.h>
+#import <Facebook/JSON.h>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // global

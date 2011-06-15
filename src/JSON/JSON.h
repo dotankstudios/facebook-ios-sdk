@@ -44,7 +44,7 @@
  
 */
 
-#import "SBJSON.h"
-#import "NSObject+SBJSON.h"
-#import "NSString+SBJSON.h"
+#import <Facebook/SBJSON.h>
+#import <Facebook/NSObject+SBJSON.h>
+#import <Facebook/NSString+SBJSON.h>
 

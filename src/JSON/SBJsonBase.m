@@ -27,7 +27,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "SBJsonBase.h"
+#import <Facebook/SBJsonBase.h>
 NSString * SBJSONErrorDomain = @"org.brautaset.JSON.ErrorDomain";
 
 

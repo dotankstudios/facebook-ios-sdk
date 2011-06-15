@@ -28,7 +28,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "SBJsonBase.h"
+#import <Facebook/SBJsonBase.h>
 
 /**
  @brief Options for the writer class.
