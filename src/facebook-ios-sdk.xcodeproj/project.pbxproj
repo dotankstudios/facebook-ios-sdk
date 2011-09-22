@@ -6,54 +6,41 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		4AAD2CF513A8C2F90010EC95 /* Universal_Framework */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 4AAD2D0213A8C2F90010EC95 /* Build configuration list for PBXAggregateTarget "Universal_Framework" */;
-			buildPhases = (
-				4AAD2CF413A8C2F90010EC95 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Universal_Framework;
-			productName = Universal_Framework;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		4AAD2CFB13A8C2F90010EC95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD2CF913A8C2F90010EC95 /* InfoPlist.strings */; };
-		4AAD2D0413A8C3810010EC95 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1411D52959000A4545 /* JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0513A8C3810010EC95 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1511D52959000A4545 /* NSObject+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0613A8C3810010EC95 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1711D52959000A4545 /* NSString+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0713A8C3810010EC95 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1911D52959000A4545 /* SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0813A8C3810010EC95 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1B11D52959000A4545 /* SBJsonBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0913A8C3810010EC95 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1D11D52959000A4545 /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0A13A8C3810010EC95 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1F11D52959000A4545 /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0B13A8C3810010EC95 /* FBConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0111D5293B000A4545 /* FBConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0C13A8C3810010EC95 /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0211D5293B000A4545 /* FBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0D13A8C3810010EC95 /* Facebook.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0511D5293B000A4545 /* Facebook.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0E13A8C3810010EC95 /* FBLoginDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0611D5293B000A4545 /* FBLoginDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D0F13A8C3810010EC95 /* FBDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0811D5293B000A4545 /* FBDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AAD2D1013A8C3970010EC95 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1611D52959000A4545 /* NSObject+SBJSON.m */; };
-		4AAD2D1113A8C3970010EC95 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1811D52959000A4545 /* NSString+SBJSON.m */; };
-		4AAD2D1213A8C3970010EC95 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1A11D52959000A4545 /* SBJSON.m */; };
-		4AAD2D1313A8C3970010EC95 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1C11D52959000A4545 /* SBJsonBase.m */; };
-		4AAD2D1413A8C3970010EC95 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1E11D52959000A4545 /* SBJsonParser.m */; };
-		4AAD2D1513A8C3970010EC95 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B2011D52959000A4545 /* SBJsonWriter.m */; };
-		4AAD2D1613A8C3970010EC95 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0311D5293B000A4545 /* FBRequest.m */; };
-		4AAD2D1713A8C3970010EC95 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0411D5293B000A4545 /* Facebook.m */; };
-		4AAD2D1813A8C3970010EC95 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0711D5293B000A4545 /* FBLoginDialog.m */; };
-		4AAD2D1913A8C3970010EC95 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0911D5293B000A4545 /* FBDialog.m */; };
-		4AAD2D2D13A8CDE30010EC95 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD2D2B13A8CDE30010EC95 /* close.png */; };
-		4AAD2D2E13A8CDE30010EC95 /* fbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD2D2C13A8CDE30010EC95 /* fbicon.png */; };
+		4AFD9F86142B0D0100FD062C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		4AFD9F8C142B0D0100FD062C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AFD9F8A142B0D0100FD062C /* InfoPlist.strings */; };
+		4AFD9F94142B0DB100FD062C /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD2D2B13A8CDE30010EC95 /* close.png */; };
+		4AFD9F95142B0DB500FD062C /* fbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAD2D2C13A8CDE30010EC95 /* fbicon.png */; };
+		4AFD9F96142B0DBB00FD062C /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1411D52959000A4545 /* JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9F97142B0DBB00FD062C /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1511D52959000A4545 /* NSObject+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9F98142B0DBB00FD062C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1611D52959000A4545 /* NSObject+SBJSON.m */; };
+		4AFD9F99142B0DBB00FD062C /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1711D52959000A4545 /* NSString+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9F9A142B0DBB00FD062C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1811D52959000A4545 /* NSString+SBJSON.m */; };
+		4AFD9F9B142B0DBB00FD062C /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1911D52959000A4545 /* SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9F9C142B0DBB00FD062C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1A11D52959000A4545 /* SBJSON.m */; };
+		4AFD9F9D142B0DBB00FD062C /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1B11D52959000A4545 /* SBJsonBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9F9E142B0DBB00FD062C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1C11D52959000A4545 /* SBJsonBase.m */; };
+		4AFD9F9F142B0DBB00FD062C /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1D11D52959000A4545 /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FA0142B0DBB00FD062C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B1E11D52959000A4545 /* SBJsonParser.m */; };
+		4AFD9FA1142B0DBB00FD062C /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B1F11D52959000A4545 /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FA2142B0DBB00FD062C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B2011D52959000A4545 /* SBJsonWriter.m */; };
+		4AFD9FA3142B0DBB00FD062C /* FBConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0111D5293B000A4545 /* FBConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FA4142B0DBB00FD062C /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0211D5293B000A4545 /* FBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FA5142B0DBB00FD062C /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0311D5293B000A4545 /* FBRequest.m */; };
+		4AFD9FA6142B0DBB00FD062C /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0411D5293B000A4545 /* Facebook.m */; };
+		4AFD9FA7142B0DBB00FD062C /* Facebook.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0511D5293B000A4545 /* Facebook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FA8142B0DBB00FD062C /* FBLoginDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0611D5293B000A4545 /* FBLoginDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FA9142B0DBB00FD062C /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0711D5293B000A4545 /* FBLoginDialog.m */; };
+		4AFD9FAA142B0DBB00FD062C /* FBDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0811D5293B000A4545 /* FBDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFD9FAB142B0DBB00FD062C /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0911D5293B000A4545 /* FBDialog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AAD2CF313A8C2F90010EC95 /* Facebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Facebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AAD2CF813A8C2F90010EC95 /* Facebook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Facebook-Info.plist"; sourceTree = "<group>"; };
-		4AAD2CFA13A8C2F90010EC95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4AAD2D2B13A8CDE30010EC95 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		4AAD2D2C13A8CDE30010EC95 /* fbicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbicon.png; sourceTree = "<group>"; };
+		4AFD9F85142B0D0100FD062C /* Facebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = Facebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFD9F89142B0D0100FD062C /* Facebook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Facebook-Info.plist"; sourceTree = "<group>"; };
+		4AFD9F8B142B0D0100FD062C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AEA93B0111D5293B000A4545 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		AEA93B0211D5293B000A4545 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
@@ -80,10 +67,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AAD2CEE13A8C2F90010EC95 /* Frameworks */ = {
+		4AFD9F80142B0D0100FD062C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFD9F86142B0D0100FD062C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +81,7 @@
 		034768DFFF38A50411DB9C8B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AAD2CF313A8C2F90010EC95 /* Facebook.framework */,
+				4AFD9F85142B0D0100FD062C /* Facebook.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				08FB77AEFE84172EC02AAC07 /* FBConnect */,
-				4AAD2CF613A8C2F90010EC95 /* Facebook */,
+				4AFD9F87142B0D0100FD062C /* Facebook */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -136,19 +124,19 @@
 			name = FBConnect;
 			sourceTree = "<group>";
 		};
-		4AAD2CF613A8C2F90010EC95 /* Facebook */ = {
+		4AFD9F87142B0D0100FD062C /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				4AAD2CF713A8C2F90010EC95 /* Supporting Files */,
+				4AFD9F88142B0D0100FD062C /* Supporting Files */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";
 		};
-		4AAD2CF713A8C2F90010EC95 /* Supporting Files */ = {
+		4AFD9F88142B0D0100FD062C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4AAD2CF813A8C2F90010EC95 /* Facebook-Info.plist */,
-				4AAD2CF913A8C2F90010EC95 /* InfoPlist.strings */,
+				4AFD9F89142B0D0100FD062C /* Facebook-Info.plist */,
+				4AFD9F8A142B0D0100FD062C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,37 +164,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4AAD2CEF13A8C2F90010EC95 /* Headers */ = {
+		4AFD9F81142B0D0100FD062C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAD2D0413A8C3810010EC95 /* JSON.h in Headers */,
-				4AAD2D0513A8C3810010EC95 /* NSObject+SBJSON.h in Headers */,
-				4AAD2D0613A8C3810010EC95 /* NSString+SBJSON.h in Headers */,
-				4AAD2D0713A8C3810010EC95 /* SBJSON.h in Headers */,
-				4AAD2D0813A8C3810010EC95 /* SBJsonBase.h in Headers */,
-				4AAD2D0913A8C3810010EC95 /* SBJsonParser.h in Headers */,
-				4AAD2D0A13A8C3810010EC95 /* SBJsonWriter.h in Headers */,
-				4AAD2D0B13A8C3810010EC95 /* FBConnect.h in Headers */,
-				4AAD2D0C13A8C3810010EC95 /* FBRequest.h in Headers */,
-				4AAD2D0D13A8C3810010EC95 /* Facebook.h in Headers */,
-				4AAD2D0E13A8C3810010EC95 /* FBLoginDialog.h in Headers */,
-				4AAD2D0F13A8C3810010EC95 /* FBDialog.h in Headers */,
+				4AFD9F96142B0DBB00FD062C /* JSON.h in Headers */,
+				4AFD9F97142B0DBB00FD062C /* NSObject+SBJSON.h in Headers */,
+				4AFD9F99142B0DBB00FD062C /* NSString+SBJSON.h in Headers */,
+				4AFD9F9B142B0DBB00FD062C /* SBJSON.h in Headers */,
+				4AFD9F9D142B0DBB00FD062C /* SBJsonBase.h in Headers */,
+				4AFD9F9F142B0DBB00FD062C /* SBJsonParser.h in Headers */,
+				4AFD9FA1142B0DBB00FD062C /* SBJsonWriter.h in Headers */,
+				4AFD9FA3142B0DBB00FD062C /* FBConnect.h in Headers */,
+				4AFD9FA4142B0DBB00FD062C /* FBRequest.h in Headers */,
+				4AFD9FA7142B0DBB00FD062C /* Facebook.h in Headers */,
+				4AFD9FA8142B0DBB00FD062C /* FBLoginDialog.h in Headers */,
+				4AFD9FAA142B0DBB00FD062C /* FBDialog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4AAD2CF213A8C2F90010EC95 /* Facebook */ = {
+		4AFD9F84142B0D0100FD062C /* Facebook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AAD2D0113A8C2F90010EC95 /* Build configuration list for PBXNativeTarget "Facebook" */;
+			buildConfigurationList = 4AFD9F8E142B0D0100FD062C /* Build configuration list for PBXNativeTarget "Facebook" */;
 			buildPhases = (
-				4AAD2CED13A8C2F90010EC95 /* Sources */,
-				4AAD2CEE13A8C2F90010EC95 /* Frameworks */,
-				4AAD2CEF13A8C2F90010EC95 /* Headers */,
-				4AAD2CF013A8C2F90010EC95 /* Resources */,
-				4AAD2CF113A8C2F90010EC95 /* ShellScript */,
+				4AFD9F7E142B0D0100FD062C /* ShellScript */,
+				4AFD9F7F142B0D0100FD062C /* Sources */,
+				4AFD9F80142B0D0100FD062C /* Frameworks */,
+				4AFD9F81142B0D0100FD062C /* Headers */,
+				4AFD9F82142B0D0100FD062C /* Resources */,
+				4AFD9F83142B0D0100FD062C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,8 +203,8 @@
 			);
 			name = Facebook;
 			productName = Facebook;
-			productReference = 4AAD2CF313A8C2F90010EC95 /* Facebook.framework */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 4AFD9F85142B0D0100FD062C /* Facebook.framework */;
+			productType = "com.apple.product-type.framework.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -237,27 +226,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AAD2CF213A8C2F90010EC95 /* Facebook */,
-				4AAD2CF513A8C2F90010EC95 /* Universal_Framework */,
+				4AFD9F84142B0D0100FD062C /* Facebook */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4AAD2CF013A8C2F90010EC95 /* Resources */ = {
+		4AFD9F82142B0D0100FD062C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAD2CFB13A8C2F90010EC95 /* InfoPlist.strings in Resources */,
-				4AAD2D2D13A8CDE30010EC95 /* close.png in Resources */,
-				4AAD2D2E13A8CDE30010EC95 /* fbicon.png in Resources */,
+				4AFD9F8C142B0D0100FD062C /* InfoPlist.strings in Resources */,
+				4AFD9F94142B0DB100FD062C /* close.png in Resources */,
+				4AFD9F95142B0DB500FD062C /* fbicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4AAD2CF113A8C2F90010EC95 /* ShellScript */ = {
+		4AFD9F7E142B0D0100FD062C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,9 +256,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nrm -f \"${CONFIGURATION_BUILD_DIR}/FakeFramework\"\nif [ -f \"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PATH}\" ]; then\n\tcp \"${CONFIGURATION_BUILD_DIR}/${EXECUTABLE_PATH}\" \"${CONFIGURATION_BUILD_DIR}/FakeFramework\"\nfi\n\t\t\t\t\t";
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
 		};
-		4AAD2CF413A8C2F90010EC95 /* ShellScript */ = {
+		4AFD9F83142B0D0100FD062C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,35 +269,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n# Assume the target name is the same as the project name\nUFW_TARGET=Facebook\n\nif [ -z ${SDK_NAME} ]; then\n    # Use the latest iphoneos SDK available\n    UFW_GREP_RESULT=$(xcodebuild -showsdks | grep -o \"iphoneos.*$\")\n    while read -r line; do\n        UFW_SDK_VERSION=\"${line}\"\n    done <<< \"${UFW_GREP_RESULT}\"\nelse\n    # Use the SDK specified by XCode\n    UFW_SDK_VERSION=\"${SDK_NAME}\"\nfi\n\nUFW_SDK_VERSION=$(echo \"${UFW_SDK_VERSION}\" | grep -o \"[0-9].*$\")\nUFW_FMWK_DIRNAME=\"${UFW_TARGET}.framework\"\nUFW_EMBEDDED_DIRNAME=\"${UFW_TARGET}.embeddedframework\"\nUFW_EXE_PATH=\"${UFW_FMWK_DIRNAME}/${UFW_TARGET}\"\nUFW_IPHONE_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUFW_SIMULATOR_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nUFW_UNIVERSAL_DIR=\"${BUILD_DIR}/${CONFIGURATION}-universal\"\n\n\n# Build Framework\n\nrm -rf \"${UFW_UNIVERSAL_DIR}\"\n\nxcodebuild -target \"${UFW_TARGET}\" -configuration ${CONFIGURATION} -sdk iphoneos${UFW_SDK_VERSION} BUILD_DIR=${BUILD_DIR} CONFIGURATION_TEMP_DIR=${CONFIGURATION_TEMP_DIR} clean build\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: xcodebuild failed\"; exit 1; fi\nxcodebuild -target \"${UFW_TARGET}\" -configuration ${CONFIGURATION} -sdk iphonesimulator${UFW_SDK_VERSION} BUILD_DIR=${BUILD_DIR} CONFIGURATION_TEMP_DIR=${CONFIGURATION_TEMP_DIR} clean build\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: xcodebuild failed\"; exit 1; fi\n\nif [ ! -f \"${UFW_IPHONE_DIR}/${UFW_EXE_PATH}\" ]; then\necho \"Framework target \\\"${UFW_TARGET}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\nexit 1\nfi\n\nmkdir -p \"${UFW_UNIVERSAL_DIR}\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mkdir failed\"; exit 1; fi\n\ncp -a \"${UFW_IPHONE_DIR}/${UFW_FMWK_DIRNAME}\" \"${UFW_UNIVERSAL_DIR}/${UFW_FMWK_DIRNAME}\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cp failed\"; exit 1; fi\n\nlipo -create -output \"${UFW_UNIVERSAL_DIR}/${UFW_EXE_PATH}\" \"${UFW_IPHONE_DIR}/${UFW_EXE_PATH}\" \"${UFW_SIMULATOR_DIR}/${UFW_EXE_PATH}\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: lipo failed\"; exit 1; fi\n\n\n# Build standard framework structure\n\nmkdir -p \"${UFW_UNIVERSAL_DIR}/${UFW_FMWK_DIRNAME}/Versions/A/Resources\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mkdir failed\"; exit 1; fi\n\ncd \"${UFW_UNIVERSAL_DIR}/${UFW_FMWK_DIRNAME}\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cd failed\"; exit 1; fi\n\nmv \"${UFW_TARGET}\" \"Versions/A/\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mv failed\"; exit 1; fi\n\nmkdir -p Headers\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mkdir failed\"; exit 1; fi\n\nmv \"Headers\" \"Versions/A/\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mv failed\"; exit 1; fi\n\nUFW_RESOURCE_LIST=$(ls)\nwhile read -r filename; do\n    if [ \"${filename}\" != \"Versions\" ]; then\n        mv \"${filename}\" \"Versions/A/Resources/\"\n        if [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mv failed\"; exit 1; fi\n    fi\ndone <<< \"${UFW_RESOURCE_LIST}\"\n\ncd Versions\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cd failed\"; exit 1; fi\n\nln -s A Current\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: ln failed\"; exit 1; fi\n\ncd ..\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cd failed\"; exit 1; fi\n\nln -s \"Versions/Current/${UFW_TARGET}\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: ln failed\"; exit 1; fi\n\nln -s \"Versions/Current/Headers\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: ln failed\"; exit 1; fi\n\nln -s \"Versions/Current/Resources\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: ln failed\"; exit 1; fi\n\n\n# Build Embedded Framework\n\nmkdir -p \"${UFW_UNIVERSAL_DIR}/${UFW_EMBEDDED_DIRNAME}/Resources\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: mkdir failed\"; exit 1; fi\n\ncp -a \"${UFW_UNIVERSAL_DIR}/${UFW_FMWK_DIRNAME}\" \"${UFW_UNIVERSAL_DIR}/${UFW_EMBEDDED_DIRNAME}/\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cp failed\"; exit 1; fi\n\ncd \"${UFW_UNIVERSAL_DIR}/${UFW_FMWK_DIRNAME}/Resources\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cd failed\"; exit 1; fi\n\nUFW_RESOURCE_LIST=$(ls)\n\ncd \"${UFW_UNIVERSAL_DIR}/${UFW_EMBEDDED_DIRNAME}/Resources\"\nif [ \"$?\" != \"0\" ]; then echo >&2 \"Error: cd failed\"; exit 1; fi\n\nwhile read -r filename; do\n    if [ \"${filename}\" != \"Info.plist\" ]; then\n        ln -s \"../${UFW_FMWK_DIRNAME}/Resources/${filename}\"\n        if [ \"$?\" != \"0\" ]; then echo >&2 \"Error: link failed\"; exit 1; fi\n    fi\ndone <<< \"${UFW_RESOURCE_LIST}\"\n\t\t\t\t\t";
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AAD2CED13A8C2F90010EC95 /* Sources */ = {
+		4AFD9F7F142B0D0100FD062C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AAD2D1013A8C3970010EC95 /* NSObject+SBJSON.m in Sources */,
-				4AAD2D1113A8C3970010EC95 /* NSString+SBJSON.m in Sources */,
-				4AAD2D1213A8C3970010EC95 /* SBJSON.m in Sources */,
-				4AAD2D1313A8C3970010EC95 /* SBJsonBase.m in Sources */,
-				4AAD2D1413A8C3970010EC95 /* SBJsonParser.m in Sources */,
-				4AAD2D1513A8C3970010EC95 /* SBJsonWriter.m in Sources */,
-				4AAD2D1613A8C3970010EC95 /* FBRequest.m in Sources */,
-				4AAD2D1713A8C3970010EC95 /* Facebook.m in Sources */,
-				4AAD2D1813A8C3970010EC95 /* FBLoginDialog.m in Sources */,
-				4AAD2D1913A8C3970010EC95 /* FBDialog.m in Sources */,
+				4AFD9F98142B0DBB00FD062C /* NSObject+SBJSON.m in Sources */,
+				4AFD9F9A142B0DBB00FD062C /* NSString+SBJSON.m in Sources */,
+				4AFD9F9C142B0DBB00FD062C /* SBJSON.m in Sources */,
+				4AFD9F9E142B0DBB00FD062C /* SBJsonBase.m in Sources */,
+				4AFD9FA0142B0DBB00FD062C /* SBJsonParser.m in Sources */,
+				4AFD9FA2142B0DBB00FD062C /* SBJsonWriter.m in Sources */,
+				4AFD9FA5142B0DBB00FD062C /* FBRequest.m in Sources */,
+				4AFD9FA6142B0DBB00FD062C /* Facebook.m in Sources */,
+				4AFD9FA9142B0DBB00FD062C /* FBLoginDialog.m in Sources */,
+				4AFD9FAB142B0DBB00FD062C /* FBDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4AAD2CF913A8C2F90010EC95 /* InfoPlist.strings */ = {
+		4AFD9F8A142B0D0100FD062C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4AAD2CFA13A8C2F90010EC95 /* en */,
+				4AFD9F8B142B0D0100FD062C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -342,79 +330,50 @@
 			};
 			name = Release;
 		};
-		4AAD2CFD13A8C2F90010EC95 /* Debug */ = {
+		4AFD9F8F142B0D0100FD062C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEAD_CODE_STRIPPING = NO;
+				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Facebook.h;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				INFOPLIST_FILE = "Facebook/Facebook-Info.plist";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				MACH_O_TYPE = mh_object;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		4AAD2CFE13A8C2F90010EC95 /* Release */ = {
+		4AFD9F90142B0D0100FD062C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DEAD_CODE_STRIPPING = NO;
+				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Facebook.h;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				INFOPLIST_FILE = "Facebook/Facebook-Info.plist";
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				MACH_O_TYPE = mh_object;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
-		4AAD2CFF13A8C2F90010EC95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = UniversalFramework;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		4AAD2D0013A8C2F90010EC95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PRODUCT_NAME = UniversalFramework;
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -430,23 +389,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AAD2D0113A8C2F90010EC95 /* Build configuration list for PBXNativeTarget "Facebook" */ = {
+		4AFD9F8E142B0D0100FD062C /* Build configuration list for PBXNativeTarget "Facebook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AAD2CFD13A8C2F90010EC95 /* Debug */,
-				4AAD2CFE13A8C2F90010EC95 /* Release */,
+				4AFD9F8F142B0D0100FD062C /* Debug */,
+				4AFD9F90142B0D0100FD062C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4AAD2D0213A8C2F90010EC95 /* Build configuration list for PBXAggregateTarget "Universal_Framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AAD2CFF13A8C2F90010EC95 /* Debug */,
-				4AAD2D0013A8C2F90010EC95 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
