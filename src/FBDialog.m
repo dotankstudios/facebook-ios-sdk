@@ -30,10 +30,8 @@ static CGFloat kPadding = 0;
 static CGFloat kBorderWidth = 10;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-static BOOL FBIsDeviceIPad() __attribute__((const));
 
-static BOOL FBIsDeviceIPad()
-{
+static BOOL FBIsDeviceIPad() {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 30200
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         return YES;
@@ -241,7 +239,7 @@ params   = _params;
 - (void)addObservers {
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(deviceOrientationDidChange:)
-                                                 name:@"UIInterfaceOrientationDidChangeNotification" object:nil];
+                                                 name:@"UIDeviceOrientationDidChangeNotification" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:) name:@"UIKeyboardWillShowNotification" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -250,7 +248,7 @@ params   = _params;
 
 - (void)removeObservers {
     [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:@"UIInterfaceOrientationDidChangeNotification" object:nil];
+                                                    name:@"UIDeviceOrientationDidChangeNotification" object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:@"UIKeyboardWillShowNotification" object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self
@@ -434,7 +432,7 @@ params   = _params;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// UIInterfaceOrientationDidChangeNotification
+// UIDeviceOrientationDidChangeNotification
 
 - (void)deviceOrientationDidChange:(void*)object {
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
