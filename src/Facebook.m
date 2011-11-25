@@ -272,10 +272,26 @@ static NSString* kSDKVersion = @"2";
  *            Callback interface for notifying the calling application when
  *            the user has logged in.
  */
-- (void)authorize:(NSArray *)permissions {
-  self.permissions = permissions;
+- (void)authorize:(NSArray *)permissions
+{
+    BOOL useSSO = NO;
+    NSString *fbURLScheme = [NSString stringWithFormat:@"fb%@",_appId];
+    for (NSDictionary *type in [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"])
+        for (NSString *urlScheme in [type objectForKey:@"CFBundleURLSchemes"])
+            if ([urlScheme isEqualToString:fbURLScheme])
+            {
+                useSSO = YES;
+                goto foundSSO;
+            }
+foundSSO:
+    [self authorize:permissions useSSO:useSSO];
+}
 
-  [self authorizeWithFBAppAuth:YES safariAuth:YES];
+-(void)authorize:(NSArray *)permissions useSSO:(BOOL)sso
+{
+    self.permissions = permissions;
+    
+    [self authorizeWithFBAppAuth:sso safariAuth:sso];
 }
 
 /**
