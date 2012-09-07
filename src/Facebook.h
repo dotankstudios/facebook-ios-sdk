@@ -70,8 +70,6 @@
         andDelegate:(id<FBSessionDelegate>)delegate;
 
 - (void)authorize:(NSArray *)permissions;
-- (void)authorize:(NSArray *)permissions
-           useSSO:(BOOL)sso;
 
 - (void)extendAccessToken;
 

@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#import <Facebook/Facebook.h>
 #import <Facebook/FBRequest.h>
 #import <Facebook/JSON.h>
 #import "FBUtility.h"
