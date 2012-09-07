@@ -408,6 +408,7 @@ static FBSession *g_activeSession = nil;
     return _urlSchemeSuffix ? _urlSchemeSuffix : @"";
 }
 
+-(void)setUrlSchemeSuffix:(NSString *)newValue {
 // actually a private member, but wanted to be close to its public colleague
     if (_urlSchemeSuffix != newValue) {
         [_urlSchemeSuffix release];
@@ -739,12 +740,12 @@ static FBSession *g_activeSession = nil;
         // this is set up correctly so that we do not attempt SSO when it will
         // not work.
         BOOL canReturnFromSSO = NO;
-        NSString *returnURLScheme = [@"fb" stringByAppendingString:_appId];
+        NSString *returnURLScheme = [@"fb" stringByAppendingString:_appID];
         if (_urlSchemeSuffix)
             returnURLScheme = [returnURLScheme stringByAppendingString:_urlSchemeSuffix];
         for (NSDictionary *type in [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleURLTypes"])
             for (NSString *urlScheme in [type objectForKey:@"CFBundleURLSchemes"])
-                if ([urlScheme isEqualToString:fbURLScheme]) {
+                if ([urlScheme isEqualToString:returnURLScheme]) {
                     canReturnFromSSO = YES;
                     goto determinedCanReturnFromSSO;
                 }
