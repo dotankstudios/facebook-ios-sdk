@@ -5,6 +5,7 @@ samples/Hackbook/Hackbook.xcodeproj/xcuserdata*
 samples/Hackbook/Hackbook.xcodeproj/project.xcworkspace
 src/facebook-ios-sdk.xcodeproj/*.pbxuser
 src/facebook-ios-sdk.xcodeproj/*.mode*
+*-generated.h
 src/build/
 build/
 lib/
